@@ -1,0 +1,164 @@
+.container{
+background: #780206;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #061161, #780206);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #061161, #780206); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+html{
+    font-family: 'Oswald', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #fcb045;
+}
+
+img{
+    max-width: 100%;
+}
+
+a:hover{
+    opacity: 0.6;
+}
+
+.title{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.descrypt{
+    line-height: 1.9em;
+    font-weight: 500;
+}
+
+.content{
+    max-width: 960px;
+    width: 100%;
+    height: 80vh;
+    background-color: white;
+    /*box-shadow: diferencia horizontal, diferencia vertical, desenfoque, amplitud*/
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    position: relative;
+    overflow: scroll;
+}
+
+.content{
+    padding:1em;
+}
+td{
+    display: block;
+    width: 100%;
+}
+td:nth-of-type(1){
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #4CA1AF;
+}
+th{
+    display: none;
+}
+
+.actions{
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+
+.close{
+    height: 40px;
+    width: 40px;
+    color: white;
+    border-radius: 50%;
+    background-color: darkmagenta;
+    display: inline-block;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    font-weight: 300;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-star{
+    color: #DBD65C;
+    
+}
+
+.tabla{
+    width: 100%;
+    border-spacing: 0;
+}
+
+.tabla td, .tabla th{
+    padding: 1em;
+    text-align: left;
+}
+
+.tabla tr:nth-child(even){ background-color: #F11712; }
+
+.title-item{
+    font-size: 2em;
+    border-bottom-style: solid;
+    border-width: 2px;
+    border-color: cornflowerblue;
+    padding-bottom: 1em;
+}
+
+.direction{
+    font-weight: bold;
+    color: darkorange;
+    font-size: 1.2em;
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.main-image{
+    float: left;
+    margin-right: 1em;
+    height: 250px;
+}
+
+.position{
+    background-color: crimson;
+    color: white;
+    padding: 0.5em;
+    border-radius: 4px;
+    margin-right: 0.5em;
+}
+
+@media(min-width:900px){
+    th{
+        display: table-cell;
+    }
+    td{
+        display: table-cell;
+        width: auto;
+    }
+    td:nth-of-type(1){
+        font-size: 1em;
+        font-weight: bold;
+        color: #4CA1AF;
+    }
+    .content{
+        padding: 1.8em;
+    }
+}
+
+@media(min-height:550px){
+    .content{
+        height: 500px;
+    }
+}
+
+.animate__animated.animate__bounce{
+    animation: fadeInDownBig;
+    animation: fadeOutUpBig;
+    animation-duration: 2s;
+    animation-delay: 0,9s;
+    animation-duration: 1000ms;
+}
